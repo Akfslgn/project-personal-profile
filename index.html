@@ -5,74 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profil Page</title>
 </head>
-<body style="padding: 5%;">
+<body style="padding: 5%; background-color: #f1f4f4; width: 80%; max-width: 1000px; min-width: 600px;" >
     <center>
-    <img src="https://picsum.photos/seed/picsum/200/200" alt="Profil photo">
-    <h1>	&#128075Hi, I'm Akif!</h1>
-    <p><i>Web developer in training.</i></p>
-    
+    <img src="https://picsum.photos/200/200" alt="My Profil photo" border="2" style="border-radius: 30px;">
+    <h1>&#128075 Hi, I'm Ak!f</h1>
+    <p><em>Web developer in training.</em></p>
+    <hr>
 </center>
-<h1>About Me</h1>
-    <table border="1" width="30%">
-        <tr bgcolor="lightgrey">
-            <td>Age:</td>
-            <td>23</td>
+<h2>About Me</h2>
+    <table width="30%" cellpadding="5px">
+        <tr>
+            <td style="background-color: #478fe1; color: white; text-align: center;">Age:</td>
+            <td style="background-color: lightgray;">31</td>
         </tr>
-        <tr bgcolor="lightblue" >
-            <td>Location:</td>
+        <tr>
+            <td style="background-color: #478fe1; color: white; text-align: center;">Location:</td>
             <td>Albany/Ny</td>
         </tr>
         <tr>
-            <td>Occupation:</td>
-            <td>Student developer</td>
+            <td style="background-color: #478fe1; color: white; text-align: center;">Occupation:</td>
+            <td style="background-color: lightgray;">Student developer</td>
         </tr>
-    </table>
+        <tr>
+            <td style="background-color: #478fe1; color: white; text-align: center;">Education:</td>
+            <td>Bachelor’s Degree</td>
+        </tr>
+    </table><br>
     <h2>Quick Facts</h2>
     <ul>
-        <li>Former Barista turner Coder</li>
-        <li>&#128214; Reading Learning HTML,CSS </li>
+        <li>&#9917; Football player</li>
+        <li>&#128214; Reading:"Learning HTML,CSS,JS" </li>
+        <li>&#x1F958; Chef</li>
     </ul>
+        <hr>
     <h2>My Favorites</h2>
-    <table border="1" width="30%">
+    <table width="70%" cellpadding="5px">
+        <thead>
+            <tr style="color: white; ">
+                <th style="background-color: #4d9891af;">Category</th>
+                <th style="background-color: #4d9891af;">Favorites</th>
+            </tr>
+        </thead>
+       <tbody>
         <tr>
-            <th>Category</th>
-            <th>Favorites</th>
+            <td style="background-color: #478fe1; color: white;" >Movies &#127916;</td>
+            <td style="background-color: lightgray; ">The Matrix,The Godfather,Harry Potter</td>
         </tr>
         <tr>
-            <td>&#127916;Movies</td>
-            <td>#</td>
+            <td style="background-color: #478fe1; color: white;">Food &#127858;</td>
+            <td>Shawarma,Kabab,Kibbeh,Black Tea,Lentil soap</td>
         </tr>
         <tr>
-            <td>Food</td>
-            <td>#</td>
+            <td style="background-color: #478fe1; color: white;">Hobies &#128247;</td>
+            <td style="background-color: #d3d3d3;">Football,Hiking,Play Station</td>
         </tr>
-        <tr>
-            <td>Hobies</td>
-            <td>##</td>
-        </tr>
-    </table>
+       </tbody>
+       </table>
+       <br>
+       <hr>
     <h2>Say Hello!</h2><br>
-    <p>Contact Form</p>
-    <form action="contact form">
+    <form style="background-color: #b2b6b6; font-size: 18px; border-radius: 10px; padding: 10px; width: 350px;">
+        <h3><center>Contact Me</center></h3>
+        <fieldset>
+            <legend>Contact Form</legend>
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br><br>
         <label for="surname">Surname:</label><br>
         <input type="text" id="surname" name="surname"><br><br>
         <label for="email">Email:</label><br>
         <input type="email" name="email" id="email"><br><br>
+        <label for="dateofbirth">Date of birth:</label><br>
+        <input type="date" id="dateofbirth" name="dateofbirth"> <br>
+        <p>Select Gender:</p>
+          <label for="genmale">Male</label>
+          <input type="radio" id="genmale" name="gender"><br>
+          <label for="genfemale">Female</label>
+          <input type="radio" name="gender" id="genfemale"> <br>
+          <label for="genother">Other</label>
+          <input type="radio" name="gender" id="genother"> <br><br>
         <label for="password">Password:</label><br>
-        <input type="password" name="password id="password" minlength="8" maxlength="12" ><br><br>
+        <input type="password" name="password id="password" minlength="8" maxlength="16" ><br><br>
+        <label for="country">Select your country:</label><br>
+        <select name="country" id="country">
+          <option value=""></option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="mexico">Mexico</option>
+          <option value="brasil">Brasil</option>
+        </select><br>
         <label for="message">Message:</label><br>
-        <textarea name="message" id="message" name="message"></textarea><br>
-
-        <button>Send</button>
-        <input type="reset">
-
-        
-
-
-
-    </form>
-
+        <textarea name="message" id="message" name="message" cols="30" rows="3"></textarea><br><br>
+        <center>
+            <input type="submit" value="Send &#128231;">
+            <input type="reset" value="Clear Form &#128394;">
+    </center>
+    </fieldset>
+</form>
+<br>
+<hr>
 </body>
+<br>
+<footer style="background-color: #cec9c9; padding: 20px; color: #2a4ab4; text-align: center;">
+    <p>Follow Me On</p>
+    <a href="https://www.instagram.com/#" target="_blank" style="color: #fff;">Instagram</a>
+    <a href="https://www.linkedin.com/#" target="_blank" style="color: #fff;">Linkedin</a>
+    <a href="https://github.com/#" target="_blank" style="color: #fff;">Github</a>
+    <p> &copy; 2024 Created by <mark>Akif SALGIN</mark>. All rights reserved.
+</footer>
 </html>
